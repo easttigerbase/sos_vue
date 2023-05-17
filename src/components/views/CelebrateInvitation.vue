@@ -4,7 +4,7 @@
       -->
   <v-container  fluid style=" text-align:center; background-color : whitesmoke; margin: 0; padding: 0; margin-top: 2px;">
 
-    <video preload="metadata" :src="require('../../assets/_ssovieo.mp4#t=0.5')" style="width: 100%;"  controls autoplay playsinline />
+    <video :poster="require('../../assets/logo.png')" :src="require('../../assets/_ssovieo.mp4')" style="width: 100%;"  controls autoplay playsinline />
 
     <!--<img :src="require('../../assets/title.png')" style="width: 100%;" />-->
 
@@ -173,6 +173,10 @@ export default {
   font-family: 'eulyoo-bold';
   src: url('../../assets/styles/font/Eulyoo1945-SemiBold.ttf');
 }
-
+video[poster]{
+  /* 포스터 이미지의 크기를 비디오 영상에 꽉차도록 */
+  height:100%;
+  width:100%;
+}
 
 </style>
