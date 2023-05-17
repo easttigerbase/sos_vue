@@ -1,18 +1,18 @@
 <template>
   <!-- App.vue -->
 
-  <v-app>
-
-      <!-- -->
+  <v-app style="">
+      <!--
     <nav-drawer app></nav-drawer>
+      초대장 임시
+      <v-main style="padding-left: 56px">
+    -->
     <!-- Sizes your content based upon application components -->
-    <v-main style="padding-left: 56px">
-
+    <v-main >
       <!-- Provides the application the proper gutter -->
-      <v-container fluid>
         <!-- If using vue-router -->
         <router-view></router-view>
-      </v-container>
+
     </v-main>
 
     <v-footer app>
@@ -23,12 +23,12 @@
 
 <script>
 
-import NavDrawer from "@/components/Nav/NavDrawer";
+//import NavDrawer from "@/components/Nav/NavDrawer";
 export default {
   name: 'App',
 
   components: {
-    NavDrawer
+    //NavDrawer
 
   },
 

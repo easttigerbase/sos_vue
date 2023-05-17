@@ -29,9 +29,18 @@
         nav
         dense
     >
+      <v-list-item link href="/workflow/main">
+        <v-list-item-icon>
+          <v-icon>mdi-file-document-check-outline</v-icon>
+        </v-list-item-icon>
+        <v-list-item-title>결재</v-list-item-title>
+        <v-list-item-avatar  size="24" >
+          <span class="darken-2 blue--text font-weight-bold">1</span>
+        </v-list-item-avatar>
+      </v-list-item>
       <v-list-item link href="/material/management">
         <v-list-item-icon>
-          <v-icon>mdi-clipboard-text-outline</v-icon>
+          <v-icon>mdi-warehouse</v-icon>
         </v-list-item-icon>
         <v-list-item-title>자재 관리</v-list-item-title>
       </v-list-item>
@@ -47,6 +56,7 @@
         </v-list-item-icon>
         <v-list-item-title>발주관리</v-list-item-title>
       </v-list-item>
+
     </v-list>
   </v-navigation-drawer>
 </template>

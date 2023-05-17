@@ -3,6 +3,7 @@ import App from './App.vue'
 import vuetify from './plugins/vuetify'
 import VueRouter from "vue-router";
 import index from './routes/index'
+require('./assets/styles/css/basic.css');
 
 Vue.config.productionTip = false
 Vue.use(VueRouter)

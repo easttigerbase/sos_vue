@@ -1,0 +1,69 @@
+
+.pm-0{
+    padding: 0;
+    margin: 0;
+}
+
+.basicTitle{
+    padding: 12px 2px 2px 12px;
+    font-size: 1.0rem !important;
+    font-weight: bold;
+    letter-spacing: 0.1666666667em !important;
+    line-height: 2rem;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif !important;
+}
+.basicGreenTextBold{
+    padding: 0;
+    font-size: 0.95rem !important;
+    font-weight: bold;
+    letter-spacing: 0.1666666667em !important;
+    line-height: 2rem;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif !important;
+    color: green;
+}
+.basicText{
+    font-size: 0.90rem !important;
+    letter-spacing: 0.1666666667em !important;
+    line-height: 2rem;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif !important;
+    justify-content: center;
+}
+
+.basicGrey{
+
+    background-color:#DCDCDC !important;
+    border-color: #DCDCDC !important;
+}
+.basicLightGrey{
+    background-color:#efefef !important;
+    border-color: #efefef !important;
+
+}
+.basicBlue{
+    background-color:#1565C0 !important;
+    border-color: #1565C0 !important;
+}
+
+.basicRoyalBlue{
+    background-color:#4169E1 !important;
+    border-color: #4169E1 !important;
+}
+
+
+.basicLightBlue{
+    background-color:#6A5ACD !important;
+    border-color: #6A5ACD !important;
+}
+
+.basicCard{
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    align-items: center;
+    border-radius: 4px;
+    flex: 0 0 auto;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif !important;
+    justify-content: center;
+}

@@ -1,15 +1,19 @@
 import VueRouter from "vue-router";
-import MaterialsManagement from "@/components/views/InventoryManagement";
 
+import workflow from "@/routes/workflow";
+import material from "@/routes/material";
+import CelebrateInvitation from "@/components/views/CelebrateInvitation";
 export default new VueRouter({
     mode:'history', //해쉬값 제거 방식
     routes: [
         {
-            path: '/',
-
-        }, {
-        path: '/material/management',
-        component:MaterialsManagement,
-    },
+            path: '/gi',
+        },
+        {
+          path:'/invitation/ssotron'  ,
+            component:CelebrateInvitation
+        },
+        ...material,
+        ...workflow,
     ]
 });
