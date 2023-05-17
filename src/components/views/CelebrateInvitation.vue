@@ -4,7 +4,7 @@
       -->
   <v-container  fluid style=" text-align:center; background-color : whitesmoke; margin: 0; padding: 0; margin-top: 2px;">
 
-    <video :src="require('../../assets/_ssovieo.mp4')" style="width: 100%;"  autoplay playsinline muted/>
+    <video preload="metadata" :src="require('../../assets/_ssovieo.mp4#t=0.5')" style="width: 100%;"  controls autoplay playsinline />
 
     <!--<img :src="require('../../assets/title.png')" style="width: 100%;" />-->
 
