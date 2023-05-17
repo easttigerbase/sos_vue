@@ -1,9 +1,10 @@
 <template>
+
     <!--<v-container fluid style="text-align: center; height: 2600px; background-size: cover;  top: 0; left: 0;padding: 0; margin: 0;" :style="{'background-image': 'url(' + require('../../assets/ssotron-001.png') + ')' }" >
       -->
   <v-container  fluid style=" text-align:center; background-color : whitesmoke; margin: 0; padding: 0; margin-top: 2px;">
 
-    <video :src="require('../../assets/_ssovieo.mp4')" style="width: 100%;" autoplay  />
+    <video :src="require('../../assets/_ssovieo.mp4')" style="width: 100%;" loop autoplay playsinline  />
 
     <!--<img :src="require('../../assets/title.png')" style="width: 100%;" />-->
 
@@ -24,9 +25,7 @@
      <div class="textBold" >감사합니다.</div>
      <div class="textBoldBIG"  >대표 신계철 올림</div>
    </div>
-
-    <v-divider class="ma-6 pa-6 "></v-divider>
-    <v-carousel hide-delimiters>
+    <v-carousel hide-delimiters class="mt-6 mb-6">
       <v-carousel-item
           :src="require('../../assets/sso2.jpeg')"
           contain
@@ -46,11 +45,9 @@
     </v-carousel>
     <div class=" textBold"  >일 시 : 2023년 6월 9일 금요일 오후 5시</div>
     <div class="textBold" style="margin-bottom: 10px" >장 소 : 인천광역시 서구 파랑482번 39 </div>
-    <div class="text">(청라동 204-10)</div>
     <div class="textBold"  >문 의 : 032-519-5490 / 010-8573-6108</div>
     <br>
 
-    <v-divider></v-divider>
 
        <v-btn  @click="goMap" text >카카오지도 보기</v-btn>
 
@@ -151,7 +148,7 @@ export default {
   font-size: 6vw;
   color: #222222;
   line-height: 1.5;
-  margin-bottom: 18px;
+  margin-top: 15px;
 }
 @font-face {
   font-family: 'eulyoo';
