@@ -4,7 +4,7 @@
       -->
   <v-container  fluid style=" text-align:center; background-color : whitesmoke; margin: 0; padding: 0; margin-top: 2px;">
 
-    <video :src="require('../../assets/_ssovieo.mp4')" style="width: 100%;" loop autoplay playsinline  />
+    <video :src="require('../../assets/_ssovieo.mp4')" style="width: 100%;"  autoplay playsinline muted/>
 
     <!--<img :src="require('../../assets/title.png')" style="width: 100%;" />-->
 
@@ -70,6 +70,20 @@ export default {
      this.loadScript();
    }
  },
+  metaInfo: {
+    // title 입력하기
+    title: '에스에스오트론 청라 준공식',
+
+    // meta tag 입력하기
+    meta: [
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { property: "og:url", content: 'http://tigerbase.io' },
+      { property: "og:title", content: '에스에스오트론 청라공장 준공식' },
+      { property: "og:type", content: 'website' },
+      { property: "og:image", content: 'http://tigerbase.io/logo.png' },
+      { property: "og:description", content: '2023년 6월 9일 오후 5시' }
+    ]
+  },
  data(){
    return{
      maps:null,

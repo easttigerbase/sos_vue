@@ -3,6 +3,13 @@ import App from './App.vue'
 import vuetify from './plugins/vuetify'
 import VueRouter from "vue-router";
 import index from './routes/index'
+
+// VueMeta
+import Meta from 'vue-meta'
+Vue.use(Meta, {
+  attribute: 'data-vue-meta'
+  // vmid를 사용하기 위한 옵션
+});
 require('./assets/styles/css/basic.css');
 
 Vue.config.productionTip = false
