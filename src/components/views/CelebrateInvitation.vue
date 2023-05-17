@@ -3,11 +3,11 @@
       -->
   <v-container  fluid style=" text-align:center; background-color : whitesmoke; margin: 0; padding: 0; margin-top: 2px;">
 
-    <video :src="require('../../assets/_ssovieo.mp4')" style="width: 100%;" controls autoplay  />
+    <video :src="require('../../assets/_ssovieo.mp4')" style="width: 100%;" autoplay  />
 
     <!--<img :src="require('../../assets/title.png')" style="width: 100%;" />-->
 
-   <div class="ma-6 pa-6"  >
+   <div class="ma-4 pa-4"  >
      <div class="textBold" >늘 아낌없는 응원을 해주시는 </div>
      <div class="textBold">귀하의 덕택으로 </div>
      <br>
@@ -22,10 +22,10 @@
      <div class="textBold">응원과 조언 부탁 드립니다.</div>
      <br>
      <div class="textBold" >감사합니다.</div>
-     <br>
-     <div class="textBold"  >대표 신계철 올림</div>
+     <div class="textBoldBIG"  >대표 신계철 올림</div>
    </div>
-    <v-divider></v-divider>
+
+    <v-divider class="ma-6 pa-6 "></v-divider>
     <v-carousel hide-delimiters>
       <v-carousel-item
           :src="require('../../assets/sso2.jpeg')"
@@ -45,16 +45,9 @@
       ></v-carousel-item>
     </v-carousel>
     <div class=" textBold"  >일 시 : 2023년 6월 9일 금요일 오후 5시</div>
-
-    <v-divider class="ma-6 pa-6 "></v-divider>
     <div class="textBold" style="margin-bottom: 10px" >장 소 : 인천광역시 서구 파랑482번 39 </div>
     <div class="text">(청라동 204-10)</div>
-    <br>
-    <v-icon
-        end
-        icon="mdi-checkbox-marked-circle"
-    ></v-icon>
-    <div class="textBold"  >문 의 : 032-519-5490 010-8573-6108</div>
+    <div class="textBold"  >문 의 : 032-519-5490 / 010-8573-6108</div>
     <br>
 
     <v-divider></v-divider>
@@ -106,7 +99,7 @@ export default {
 
      const mapOption = {
        center: new window.kakao.maps.LatLng(37.524131634801726,  126.65609172916658 ), // 지도의 중심좌표
-       level: 5, // 지도의 확대 레벨,
+       level: 7, // 지도의 확대 레벨,
        marker: new window.kakao.maps.Marker()
      };
 
@@ -120,8 +113,7 @@ export default {
 
      marker.setMap( maps);
 
-     const infoWindow = new window.kakao.maps.InfoWindow({content : '<div style="text-align: center; justify-content: center">에스에스오트론</div>'});
-     infoWindow.open(maps,marker);
+
 
      var zoomControl = new window.kakao.maps.ZoomControl();
      maps.addControl(zoomControl, window.kakao.maps.ControlPosition.RIGHT);
@@ -141,8 +133,8 @@ export default {
   font-family: 'eulyoo', serif;
   font-size: 5vw;
   color: #222222;
-  line-height: 1.7;
-  margin-bottom: 20px;
+  line-height: 1.5;
+  margin-bottom: 18px;
 }
 .textBold{
   text-align: center;
@@ -150,7 +142,16 @@ export default {
   font-size: 5vw;
   color: #222222;
   line-height: 1.5;
-  margin-bottom: 24px;
+  margin-bottom: 18px;
+}
+
+.textBoldBIG{
+  text-align: center;
+  font-family: 'eulyoo-bold', serif;
+  font-size: 6vw;
+  color: #222222;
+  line-height: 1.5;
+  margin-bottom: 18px;
 }
 @font-face {
   font-family: 'eulyoo';
