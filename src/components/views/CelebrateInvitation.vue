@@ -44,7 +44,7 @@
       ></v-carousel-item>
     </v-carousel>
     <div class=" textBold"  >일 시 : 2023년 6월 9일 금요일 오후 5시</div>
-    <div class="textBold" style="margin-bottom: 10px" >장 소 : 인천광역시 서구 파랑482번 39 </div>
+    <div class="textBold" style="margin-bottom: 10px" >장 소 : 인천광역시 서구 파랑로 482번길 39 </div>
     <div class="textBold"  >문 의 : 032-519-5490 / 010-8573-6108</div>
     <br>
 
